@@ -134,8 +134,9 @@ EOF
             echo "Node berhasil diinstal dan layanan pipenetwork dimulai."
             ;;
         2)
-            echo "Cek logs dengan perintah 'cd pipenetwork && ./pop --status'..."
-            cd $HOME/pipenetwork && ./pop --status
+            # Opsi 2: Cek logs
+            echo "Cek logs dengan perintah 'journalctl -u pipenetwork -fo cat'..."
+            journalctl -u pipenetwork -fo cat
             ;;
         3)
             echo "Cek status Node dengan perintah 'cd pipenetwork && ./pop --status'..."
