@@ -144,7 +144,7 @@ EOF
             ;;
         4)
             echo "Cek Earned Points dengan perintah './pop --points-route'..."
-            cd $HOME/pipenetwork && ./pop --points-route
+            cd $HOME/pipenetwork && ./pop --points
             ;;
         5)
             read -p "Masukkan referral ID: " referral_id
